@@ -1,10 +1,7 @@
 type: object
 title: Zone Code
 description: The names of the districts in which voters may be registered.
-primaryKey:
-  - county_name
-  - zone_number
-exportFileType: Zone Code
+exportFileType: Zone Codes
 properties:
   county_name:
     type: string

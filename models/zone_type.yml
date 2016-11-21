@@ -4,7 +4,7 @@ description: The types of districts into which a county has its voters segmented
 primaryKey:
   - county_name
   - zone_number
-exportFileType: Zone Type
+exportFileType: Zone Types
 properties:
   county_name:
     type: string
