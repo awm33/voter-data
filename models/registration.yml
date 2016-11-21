@@ -1,0 +1,928 @@
+type: object
+title: Registration
+description: PA Voter Registration Data
+primaryKey: id
+exportFileType: FVE
+properties:
+  id:
+    type: string
+    title: ID Number
+    description: SURE Voter ID number
+    order: 1
+  title:
+    type: string
+    title: Title
+    order: 2
+  last_name:
+    type: string
+    title: Last Name
+    order: 3
+  first_name:
+    type: string
+    title: First Name
+    order: 4
+  middle_name:
+    type: string
+    title: Middle Name
+    order: 5
+  suffix:
+    type: string
+    title: Suffix
+    order: 6
+  gender:
+    type: string
+    title: Gender
+    description: F=Female, M=Male, U=Unknown
+    enum:
+      - F
+      - M
+      - U
+    order: 7
+  dob:
+    type: string
+    format: date-time
+    title: DOB
+    description: Date of Birth
+    order: 8
+  registration_date:
+    type: string
+    format: date-time
+    order: 9
+  voter_status:
+    type: string
+    title: Voter Status
+    description: A=Active, I=Inactive
+    enum:
+      - A
+      - I
+    order: 10
+  status_change_date:
+    type: string
+    format: date-time
+    title: Status Change Date
+    order: 11
+  party_code: # foreign key
+    type: string
+    title: Party Code
+    order: 12
+  house_number:
+    type: string
+    title: House Number
+    description: Residential House Number
+    order: 13
+  house_number_suffix:
+    type: string
+    title: House Number Suffix
+    description: Residential House Number Suffix
+    order: 14
+  street_name:
+    type: string
+    title: Street Name
+    description: Residential Street Name
+    order: 15
+  apartment_number:
+    type: string
+    title: Apartment Number
+    description: Residential Apartment Number
+    order: 16
+  address_line_2:
+    type: string
+    title: Address Line 2
+    description: Residential Address Line 2
+    order: 17
+  city:
+    type: string
+    title: City
+    description: Residential City
+    order: 18
+  state:
+    type: string
+    title: State
+    description: Residential State
+    order: 19
+  zip:
+    type: string
+    title: Zip
+    description: Residential Zip
+    order: 20
+  mail_address_1:
+    type: string
+    title: Mailing Address Line 1
+    order: 21
+  mail_address_2:
+    type: string
+    title: Mailing Address Line 2
+    order: 22
+  mail_city:
+    type: string
+    title: Mailing City
+    order: 23
+  mail_state:
+    type: string
+    title: Mailing State
+    order: 24
+  mail_zip:
+    type: string
+    title: Mailing Zip
+    order: 25
+  last_vote_date:
+    type: string
+    format: date-time
+    title: Last Vote Date
+    order: 26
+  precinct_code:
+    type: string
+    title: Precinct Code
+    order: 27
+  precinct_split_id:
+    type: string
+    title: Precinct Split ID
+    order: 28
+  date_last_changed:
+    type: string
+    format: date-time
+    title: Date Last Changed
+    order: 29
+  custom_data_1:
+    type: string
+    title: Custom Data 1
+    description: Legacy system ID number
+    order: 30
+  district_1:
+    type: string
+    title: District 1
+    description: See Zone Code and Zone Type documentation for District 1 to District 40
+    order: 31
+  district_2:
+    type: string
+    title: District 2
+    description: See Zone Code and Zone Type documentation for District 1 to District 40
+    order: 32
+  district_3:
+    type: string
+    title: District 3
+    description: See Zone Code and Zone Type documentation for District 1 to District 40
+    order: 33
+  district_4:
+    type: string
+    title: District 4
+    description: See Zone Code and Zone Type documentation for District 1 to District 40
+    order: 34
+  district_5:
+    type: string
+    title: District 5
+    description: See Zone Code and Zone Type documentation for District 1 to District 40
+    order: 35
+  district_6:
+    type: string
+    title: District 6
+    description: See Zone Code and Zone Type documentation for District 1 to District 40
+    order: 36
+  district_7:
+    type: string
+    title: District 7
+    description: See Zone Code and Zone Type documentation for District 1 to District 40
+    order: 37
+  district_8:
+    type: string
+    title: District 8
+    description: See Zone Code and Zone Type documentation for District 1 to District 40
+    order: 38
+  district_9:
+    type: string
+    title: District 9
+    description: See Zone Code and Zone Type documentation for District 1 to District 40
+    order: 39
+  district_10:
+    type: string
+    title: District 10
+    description: See Zone Code and Zone Type documentation for District 1 to District 40
+    order: 40
+  district_11:
+    type: string
+    title: District 11
+    description: See Zone Code and Zone Type documentation for District 1 to District 40
+    order: 41
+  district_12:
+    type: string
+    title: District 12
+    description: See Zone Code and Zone Type documentation for District 1 to District 40
+    order: 42
+  district_13:
+    type: string
+    title: District 13
+    description: See Zone Code and Zone Type documentation for District 1 to District 40
+    order: 43
+  district_14:
+    type: string
+    title: District 14
+    description: See Zone Code and Zone Type documentation for District 1 to District 40
+    order: 44
+  district_15:
+    type: string
+    title: District 15
+    description: See Zone Code and Zone Type documentation for District 1 to District 40
+    order: 45
+  district_16:
+    type: string
+    title: District 16
+    description: See Zone Code and Zone Type documentation for District 1 to District 40
+    order: 46
+  district_17:
+    type: string
+    title: District 17
+    description: See Zone Code and Zone Type documentation for District 1 to District 40
+    order: 47
+  district_18:
+    type: string
+    title: District 18
+    description: See Zone Code and Zone Type documentation for District 1 to District 40
+    order: 48
+  district_19:
+    type: string
+    title: District 19
+    description: See Zone Code and Zone Type documentation for District 1 to District 40
+    order: 49
+  district_20:
+    type: string
+    title: District 20
+    description: See Zone Code and Zone Type documentation for District 1 to District 40
+    order: 50
+  district_21:
+    type: string
+    title: District 21
+    description: See Zone Code and Zone Type documentation for District 1 to District 40
+    order: 51
+  district_22:
+    type: string
+    title: District 22
+    description: See Zone Code and Zone Type documentation for District 1 to District 40
+    order: 52
+  district_23:
+    type: string
+    title: District 23
+    description: See Zone Code and Zone Type documentation for District 1 to District 40
+    order: 53
+  district_24:
+    type: string
+    title: District 24
+    description: See Zone Code and Zone Type documentation for District 1 to District 40
+    order: 54
+  district_25:
+    type: string
+    title: District 25
+    description: See Zone Code and Zone Type documentation for District 1 to District 40
+    order: 55
+  district_26:
+    type: string
+    title: District 26
+    description: See Zone Code and Zone Type documentation for District 1 to District 40
+    order: 56
+  district_27:
+    type: string
+    title: District 27
+    description: See Zone Code and Zone Type documentation for District 1 to District 40
+    order: 57
+  district_28:
+    type: string
+    title: District 28
+    description: See Zone Code and Zone Type documentation for District 1 to District 40
+    order: 58
+  district_29:
+    type: string
+    title: District 29
+    description: See Zone Code and Zone Type documentation for District 1 to District 40
+    order: 59
+  district_30:
+    type: string
+    title: District 30
+    description: See Zone Code and Zone Type documentation for District 1 to District 40
+    order: 60
+  district_31:
+    type: string
+    title: District 31
+    description: See Zone Code and Zone Type documentation for District 1 to District 40
+    order: 61
+  district_32:
+    type: string
+    title: District 32
+    description: See Zone Code and Zone Type documentation for District 1 to District 40
+    order: 62
+  district_33:
+    type: string
+    title: District 33
+    description: See Zone Code and Zone Type documentation for District 1 to District 40
+    order: 63
+  district_34:
+    type: string
+    title: District 34
+    description: See Zone Code and Zone Type documentation for District 1 to District 40
+    order: 64
+  district_35:
+    type: string
+    title: District 35
+    description: See Zone Code and Zone Type documentation for District 1 to District 40
+    order: 65
+  district_36:
+    type: string
+    title: District 36
+    description: See Zone Code and Zone Type documentation for District 1 to District 40
+    order: 66
+  district_37:
+    type: string
+    title: District 37
+    description: See Zone Code and Zone Type documentation for District 1 to District 40
+    order: 67
+  district_38:
+    type: string
+    title: District 38
+    description: See Zone Code and Zone Type documentation for District 1 to District 40
+    order: 68
+  district_39:
+    type: string
+    title: District 39
+    description: See Zone Code and Zone Type documentation for District 1 to District 40
+    order: 69
+  district_40:
+    type: string
+    title: District 40
+    description: See Zone Code and Zone Type documentation for District 1 to District 40
+    order: 70
+  election_1_vote_method:
+    type: string
+    title: Election 1 Vote Method
+    description: See Election Map documentation for Election 1 to Election 40. AP=At Polls, AB=Absentee, P=Provisional
+    enum:
+      - AP
+      - AB
+      - P
+    order: 71
+  election_1_party:
+    type: string
+    title: Election 1 Party
+    description: See Election Map documentation for Election 1 to Election 40.
+    order: 72
+  election_2_vote_method:
+    type: string
+    title: Election 2 Vote Method
+    description: See Election Map documentation for Election 1 to Election 40. AP=At Polls, AB=Absentee, P=Provisional
+    enum:
+      - AP
+      - AB
+      - P
+    order: 73
+  election_2_party:
+    type: string
+    title: Election 2 Party
+    description: See Election Map documentation for Election 1 to Election 40.
+    order: 74
+  election_3_vote_method:
+    type: string
+    title: Election 3 Vote Method
+    description: See Election Map documentation for Election 1 to Election 40. AP=At Polls, AB=Absentee, P=Provisional
+    enum:
+      - AP
+      - AB
+      - P
+    order: 75
+  election_3_party:
+    type: string
+    title: Election 3 Party
+    description: See Election Map documentation for Election 1 to Election 40.
+    order: 76
+  election_4_vote_method:
+    type: string
+    title: Election 4 Vote Method
+    description: See Election Map documentation for Election 1 to Election 40. AP=At Polls, AB=Absentee, P=Provisional
+    enum:
+      - AP
+      - AB
+      - P
+    order: 77
+  election_4_party:
+    type: string
+    title: Election 4 Party
+    description: See Election Map documentation for Election 1 to Election 40.
+    order: 78
+  election_5_vote_method:
+    type: string
+    title: Election 5 Vote Method
+    description: See Election Map documentation for Election 1 to Election 40. AP=At Polls, AB=Absentee, P=Provisional
+    enum:
+      - AP
+      - AB
+      - P
+    order: 79
+  election_5_party:
+    type: string
+    title: Election 5 Party
+    description: See Election Map documentation for Election 1 to Election 40.
+    order: 80
+  election_6_vote_method:
+    type: string
+    title: Election 6 Vote Method
+    description: See Election Map documentation for Election 1 to Election 40. AP=At Polls, AB=Absentee, P=Provisional
+    enum:
+      - AP
+      - AB
+      - P
+    order: 81
+  election_6_party:
+    type: string
+    title: Election 6 Party
+    description: See Election Map documentation for Election 1 to Election 40.
+    order: 82
+  election_7_vote_method:
+    type: string
+    title: Election 7 Vote Method
+    description: See Election Map documentation for Election 1 to Election 40. AP=At Polls, AB=Absentee, P=Provisional
+    enum:
+      - AP
+      - AB
+      - P
+    order: 83
+  election_7_party:
+    type: string
+    title: Election 7 Party
+    description: See Election Map documentation for Election 1 to Election 40.
+    order: 84
+  election_8_vote_method:
+    type: string
+    title: Election 8 Vote Method
+    description: See Election Map documentation for Election 1 to Election 40. AP=At Polls, AB=Absentee, P=Provisional
+    enum:
+      - AP
+      - AB
+      - P
+    order: 85
+  election_8_party:
+    type: string
+    title: Election 8 Party
+    description: See Election Map documentation for Election 1 to Election 40.
+    order: 86
+  election_9_vote_method:
+    type: string
+    title: Election 9 Vote Method
+    description: See Election Map documentation for Election 1 to Election 40. AP=At Polls, AB=Absentee, P=Provisional
+    enum:
+      - AP
+      - AB
+      - P
+    order: 87
+  election_9_party:
+    type: string
+    title: Election 9 Party
+    description: See Election Map documentation for Election 1 to Election 40.
+    order: 88
+  election_10_vote_method:
+    type: string
+    title: Election 10 Vote Method
+    description: See Election Map documentation for Election 1 to Election 40. AP=At Polls, AB=Absentee, P=Provisional
+    enum:
+      - AP
+      - AB
+      - P
+    order: 89
+  election_10_party:
+    type: string
+    title: Election 10 Party
+    description: See Election Map documentation for Election 1 to Election 40.
+    order: 90
+  election_11_vote_method:
+    type: string
+    title: Election 11 Vote Method
+    description: See Election Map documentation for Election 1 to Election 40. AP=At Polls, AB=Absentee, P=Provisional
+    enum:
+      - AP
+      - AB
+      - P
+    order: 91
+  election_11_party:
+    type: string
+    title: Election 11 Party
+    description: See Election Map documentation for Election 1 to Election 40.
+    order: 92
+  election_12_vote_method:
+    type: string
+    title: Election 12 Vote Method
+    description: See Election Map documentation for Election 1 to Election 40. AP=At Polls, AB=Absentee, P=Provisional
+    enum:
+      - AP
+      - AB
+      - P
+    order: 93
+  election_12_party:
+    type: string
+    title: Election 12 Party
+    description: See Election Map documentation for Election 1 to Election 40.
+    order: 94
+  election_13_vote_method:
+    type: string
+    title: Election 13 Vote Method
+    description: See Election Map documentation for Election 1 to Election 40. AP=At Polls, AB=Absentee, P=Provisional
+    enum:
+      - AP
+      - AB
+      - P
+    order: 95
+  election_13_party:
+    type: string
+    title: Election 13 Party
+    description: See Election Map documentation for Election 1 to Election 40.
+    order: 96
+  election_14_vote_method:
+    type: string
+    title: Election 14 Vote Method
+    description: See Election Map documentation for Election 1 to Election 40. AP=At Polls, AB=Absentee, P=Provisional
+    enum:
+      - AP
+      - AB
+      - P
+    order: 97
+  election_14_party:
+    type: string
+    title: Election 14 Party
+    description: See Election Map documentation for Election 1 to Election 40.
+    order: 98
+  election_15_vote_method:
+    type: string
+    title: Election 15 Vote Method
+    description: See Election Map documentation for Election 1 to Election 40. AP=At Polls, AB=Absentee, P=Provisional
+    enum:
+      - AP
+      - AB
+      - P
+    order: 99
+  election_15_party:
+    type: string
+    title: Election 15 Party
+    description: See Election Map documentation for Election 1 to Election 40.
+    order: 100
+  election_16_vote_method:
+    type: string
+    title: Election 16 Vote Method
+    description: See Election Map documentation for Election 1 to Election 40. AP=At Polls, AB=Absentee, P=Provisional
+    enum:
+      - AP
+      - AB
+      - P
+    order: 101
+  election_16_party:
+    type: string
+    title: Election 16 Party
+    description: See Election Map documentation for Election 1 to Election 40.
+    order: 102
+  election_17_vote_method:
+    type: string
+    title: Election 17 Vote Method
+    description: See Election Map documentation for Election 1 to Election 40. AP=At Polls, AB=Absentee, P=Provisional
+    enum:
+      - AP
+      - AB
+      - P
+    order: 103
+  election_17_party:
+    type: string
+    title: Election 17 Party
+    description: See Election Map documentation for Election 1 to Election 40.
+    order: 104
+  election_18_vote_method:
+    type: string
+    title: Election 18 Vote Method
+    description: See Election Map documentation for Election 1 to Election 40. AP=At Polls, AB=Absentee, P=Provisional
+    enum:
+      - AP
+      - AB
+      - P
+    order: 105
+  election_18_party:
+    type: string
+    title: Election 18 Party
+    description: See Election Map documentation for Election 1 to Election 40.
+    order: 106
+  election_19_vote_method:
+    type: string
+    title: Election 19 Vote Method
+    description: See Election Map documentation for Election 1 to Election 40. AP=At Polls, AB=Absentee, P=Provisional
+    enum:
+      - AP
+      - AB
+      - P
+    order: 107
+  election_19_party:
+    type: string
+    title: Election 19 Party
+    description: See Election Map documentation for Election 1 to Election 40.
+    order: 108
+  election_20_vote_method:
+    type: string
+    title: Election 20 Vote Method
+    description: See Election Map documentation for Election 1 to Election 40. AP=At Polls, AB=Absentee, P=Provisional
+    enum:
+      - AP
+      - AB
+      - P
+    order: 109
+  election_20_party:
+    type: string
+    title: Election 20 Party
+    description: See Election Map documentation for Election 1 to Election 40.
+    order: 110
+  election_21_vote_method:
+    type: string
+    title: Election 21 Vote Method
+    description: See Election Map documentation for Election 1 to Election 40. AP=At Polls, AB=Absentee, P=Provisional
+    enum:
+      - AP
+      - AB
+      - P
+    order: 111
+  election_21_party:
+    type: string
+    title: Election 21 Party
+    description: See Election Map documentation for Election 1 to Election 40.
+    order: 112
+  election_22_vote_method:
+    type: string
+    title: Election 22 Vote Method
+    description: See Election Map documentation for Election 1 to Election 40. AP=At Polls, AB=Absentee, P=Provisional
+    enum:
+      - AP
+      - AB
+      - P
+    order: 113
+  election_22_party:
+    type: string
+    title: Election 22 Party
+    description: See Election Map documentation for Election 1 to Election 40.
+    order: 114
+  election_23_vote_method:
+    type: string
+    title: Election 23 Vote Method
+    description: See Election Map documentation for Election 1 to Election 40. AP=At Polls, AB=Absentee, P=Provisional
+    enum:
+      - AP
+      - AB
+      - P
+    order: 115
+  election_23_party:
+    type: string
+    title: Election 23 Party
+    description: See Election Map documentation for Election 1 to Election 40.
+    order: 116
+  election_24_vote_method:
+    type: string
+    title: Election 24 Vote Method
+    description: See Election Map documentation for Election 1 to Election 40. AP=At Polls, AB=Absentee, P=Provisional
+    enum:
+      - AP
+      - AB
+      - P
+    order: 117
+  election_24_party:
+    type: string
+    title: Election 24 Party
+    description: See Election Map documentation for Election 1 to Election 40.
+    order: 118
+  election_25_vote_method:
+    type: string
+    title: Election 25 Vote Method
+    description: See Election Map documentation for Election 1 to Election 40. AP=At Polls, AB=Absentee, P=Provisional
+    enum:
+      - AP
+      - AB
+      - P
+    order: 119
+  election_25_party:
+    type: string
+    title: Election 25 Party
+    description: See Election Map documentation for Election 1 to Election 40.
+    order: 120
+  election_26_vote_method:
+    type: string
+    title: Election 26 Vote Method
+    description: See Election Map documentation for Election 1 to Election 40. AP=At Polls, AB=Absentee, P=Provisional
+    enum:
+      - AP
+      - AB
+      - P
+    order: 121
+  election_26_party:
+    type: string
+    title: Election 26 Party
+    description: See Election Map documentation for Election 1 to Election 40.
+    order: 122
+  election_27_vote_method:
+    type: string
+    title: Election 27 Vote Method
+    description: See Election Map documentation for Election 1 to Election 40. AP=At Polls, AB=Absentee, P=Provisional
+    enum:
+      - AP
+      - AB
+      - P
+    order: 123
+  election_27_party:
+    type: string
+    title: Election 27 Party
+    description: See Election Map documentation for Election 1 to Election 40.
+    order: 124
+  election_28_vote_method:
+    type: string
+    title: Election 28 Vote Method
+    description: See Election Map documentation for Election 1 to Election 40. AP=At Polls, AB=Absentee, P=Provisional
+    enum:
+      - AP
+      - AB
+      - P
+    order: 125
+  election_28_party:
+    type: string
+    title: Election 28 Party
+    description: See Election Map documentation for Election 1 to Election 40.
+    order: 126
+  election_29_vote_method:
+    type: string
+    title: Election 29 Vote Method
+    description: See Election Map documentation for Election 1 to Election 40. AP=At Polls, AB=Absentee, P=Provisional
+    enum:
+      - AP
+      - AB
+      - P
+    order: 127
+  election_29_party:
+    type: string
+    title: Election 29 Party
+    description: See Election Map documentation for Election 1 to Election 40.
+    order: 128
+  election_30_vote_method:
+    type: string
+    title: Election 30 Vote Method
+    description: See Election Map documentation for Election 1 to Election 40. AP=At Polls, AB=Absentee, P=Provisional
+    enum:
+      - AP
+      - AB
+      - P
+    order: 129
+  election_30_party:
+    type: string
+    title: Election 30 Party
+    description: See Election Map documentation for Election 1 to Election 40.
+    order: 130
+  election_31_vote_method:
+    type: string
+    title: Election 31 Vote Method
+    description: See Election Map documentation for Election 1 to Election 40. AP=At Polls, AB=Absentee, P=Provisional
+    enum:
+      - AP
+      - AB
+      - P
+    order: 132
+  election_31_party:
+    type: string
+    title: Election 31 Party
+    description: See Election Map documentation for Election 1 to Election 40.
+    order: 133
+  election_32_vote_method:
+    type: string
+    title: Election 32 Vote Method
+    description: See Election Map documentation for Election 1 to Election 40. AP=At Polls, AB=Absentee, P=Provisional
+    enum:
+      - AP
+      - AB
+      - P
+    order: 134
+  election_32_party:
+    type: string
+    title: Election 32 Party
+    description: See Election Map documentation for Election 1 to Election 40.
+    order: 135
+  election_33_vote_method:
+    type: string
+    title: Election 33 Vote Method
+    description: See Election Map documentation for Election 1 to Election 40. AP=At Polls, AB=Absentee, P=Provisional
+    enum:
+      - AP
+      - AB
+      - P
+    order: 136
+  election_33_party:
+    type: string
+    title: Election 33 Party
+    description: See Election Map documentation for Election 1 to Election 40.
+    order: 137
+  election_34_vote_method:
+    type: string
+    title: Election 34 Vote Method
+    description: See Election Map documentation for Election 1 to Election 40. AP=At Polls, AB=Absentee, P=Provisional
+    enum:
+      - AP
+      - AB
+      - P
+    order: 138
+  election_34_party:
+    type: string
+    title: Election 34 Party
+    description: See Election Map documentation for Election 1 to Election 40.
+    order: 139
+  election_35_vote_method:
+    type: string
+    title: Election 35 Vote Method
+    description: See Election Map documentation for Election 1 to Election 40. AP=At Polls, AB=Absentee, P=Provisional
+    enum:
+      - AP
+      - AB
+      - P
+    order: 140
+  election_35_party:
+    type: string
+    title: Election 35 Party
+    description: See Election Map documentation for Election 1 to Election 40.
+    order: 141
+  election_36_vote_method:
+    type: string
+    title: Election 36 Vote Method
+    description: See Election Map documentation for Election 1 to Election 40. AP=At Polls, AB=Absentee, P=Provisional
+    enum:
+      - AP
+      - AB
+      - P
+    order: 142
+  election_36_party:
+    type: string
+    title: Election 36 Party
+    description: See Election Map documentation for Election 1 to Election 40.
+    order: 143
+  election_37_vote_method:
+    type: string
+    title: Election 37 Vote Method
+    description: See Election Map documentation for Election 1 to Election 40. AP=At Polls, AB=Absentee, P=Provisional
+    enum:
+      - AP
+      - AB
+      - P
+    order: 144
+  election_37_party:
+    type: string
+    title: Election 37 Party
+    description: See Election Map documentation for Election 1 to Election 40.
+    order: 145
+  election_38_vote_method:
+    type: string
+    title: Election 38 Vote Method
+    description: See Election Map documentation for Election 1 to Election 40. AP=At Polls, AB=Absentee, P=Provisional
+    enum:
+      - AP
+      - AB
+      - P
+    order: 146
+  election_38_party:
+    type: string
+    title: Election 38 Party
+    description: See Election Map documentation for Election 1 to Election 40.
+    order: 147
+  election_39_vote_method:
+    type: string
+    title: Election 39 Vote Method
+    description: See Election Map documentation for Election 1 to Election 40. AP=At Polls, AB=Absentee, P=Provisional
+    enum:
+      - AP
+      - AB
+      - P
+    order: 148
+  election_39_party:
+    type: string
+    title: Election 39 Party
+    description: See Election Map documentation for Election 1 to Election 40.
+    order: 149
+  election_40_vote_method:
+    type: string
+    title: Election 40 Vote Method
+    description: See Election Map documentation for Election 1 to Election 40. AP=At Polls, AB=Absentee, P=Provisional
+    enum:
+      - AP
+      - AB
+      - P
+    order: 150
+  election_40_party:
+    type: string
+    title: Election 40 Party
+    description: See Election Map documentation for Election 1 to Election 40.
+    order: 151
+  home_phone:
+    type: string
+    title: Home Phone
+    order: 152
+  county:
+    type: string
+    title: County
+    order: 153
+  mail_county:
+    type: string
+    title: Mail County
+    order: 154
+  snapshot_date:
+    type: string
+    format: date-time
+    title: Snapshot Date
+    description: Date the data was compiled by the Pennsylvania Department of State SURE Office.
+    order: 155

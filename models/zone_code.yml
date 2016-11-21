@@ -1,0 +1,34 @@
+type: object
+title: Zone Code
+description: The names of the districts in which voters may be registered.
+primaryKey:
+  - county_name
+  - zone_number
+exportFileType: Zone Code
+properties:
+  county_name:
+    type: string
+    title: County Name
+    description: County the file is exported for. Ex. ADAMS, CUMBERLAND, DAUPHIN, etc.
+    order: 1
+  zone_number:
+    type: integer
+    title: Zone Number
+    description: District field found in the voter export. Ex. 1, 2, 3, etc.
+    order: 2
+  zone_code:
+    type: string
+    title: Zone Code
+    description: Code found in the district field located in the voter export. Ex. MN11, JD402, 11-1, etc.
+    order: 3
+  zone_description:
+    type: string
+    title: Zone Description
+    description: Description of the Zone Code. Ex. MAIN TOWNSHIP, 123 JUDICIAL DISTRICT, JONES TOWNSHIP, etc.
+    order: 4
+  snapshot_date:
+    type: string
+    format: date-time
+    title: Snapshot Date
+    description: Date the data was compiled by the Pennsylvania Department of State SURE Office.
+    order: 5

@@ -1,0 +1,34 @@
+type: object
+title: Election Mapping
+description: Elections found in the voter export record.
+primaryKey:
+  - county_name
+  - election_number
+exportFileType: Election Map
+properties:
+  county_name:
+    type: string
+    title: County Name
+    description: County the file is exported for. Ex. ADAMS, CUMBERLAND, DAUPHIN, etc.
+    order: 1
+  election_number:
+    type: integer
+    title: Election Number
+    description: Appropriate election field found in the voter export. Ex. 5, 1, 7, etc.
+    order: 2
+  election_description:
+    type: string
+    title: Election Description
+    description: Name of the election setup by the county. Ex. 2006 General Primary, 2000 General, etc.
+    order: 3
+  election_date:
+    type: string
+    format: date-time
+    title: Election Date
+    order: 4
+  snapshot_date:
+    type: string
+    format: date-time
+    title: Snapshot Date
+    description: Date the data was compiled by the Pennsylvania Department of State SURE Office.
+    order: 5
