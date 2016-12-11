@@ -1,7 +1,6 @@
 type: object
 title: Registration
 description: PA Voter Registration Data
-primaryKey: id
 exportFileType: FVE
 properties:
   id:
