@@ -1,34 +1,28 @@
-type: object
 title: Zone Type
 description: The types of districts into which a county has its voters segmented.
 primaryKey:
   - county_name
   - zone_number
 exportFileType: Zone Types
-properties:
-  county_name:
+fields:
+  - name: county_name
     type: string
     title: County Name
     description: County the file is exported for. Ex. ADAMS, CUMBERLAND, DAUPHIN, etc.
-    order: 1
-  zone_number:
+  - name: zone_number
     type: integer
     title: Zone Number
     description: District field found in the voter export. Ex. 1, 2, 3, etc.
-    order: 2
-  zone_short_name:
+  - name: zone_short_name
     type: string
     title: Zone Short Name
     description: Ex. Prec, WD, SC, SN, etc.
-    order: 3
-  zone_long_name:
+  - name: zone_long_name
     type: string
     title: Zone Long Name
     description: Description Ex. Precinct, Ward, School District, Senate, etc.
-    order: 4
-  snapshot_date:
+  - name: snapshot_date
     type: string
     format: date-time
     title: Snapshot Date
     description: Date the data was compiled by the Pennsylvania Department of State SURE Office.
-    order: 5

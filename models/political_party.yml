@@ -1,0 +1,15 @@
+title: Political Party
+description: Corresponds to the political party code in registration.
+primaryKey:
+  - party_code
+fields:
+  - name: party_code
+    type: string
+    title: Party Code
+  - name: party_description
+    type: string
+    title: Full Party Title / Description
+  - name: snapshot_date
+    type: date
+    title: Snapshot Date
+    description: Date the data was compiled by the Pennsylvania Department of State SURE Office.
